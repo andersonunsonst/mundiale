@@ -89,10 +89,15 @@ class CrawlerController {
         let url = './json/tempStores.json.txt';
         let fileErrMessage = "Ocorreu um erro ao adicionar dados ao arquivo temporário!";
         fileHelper.appendFile(url, JSON.stringify(arrLocationStore, null, 4), errCallback, fileErrMessage);
-       
-        let firstFileUrl = './json/tempPrincipal.json.txt';
-        let finalObject = fileHelper.mergeFiles(firstFileUrl, url);
-        res.json(finalObject)
+        if(limit){
+            let amountItems = fileHelper.countItemsFile(url, limit);
+            if(amountItems == limit){
+                let firstFileUrl = './json/tempPrincipal.json.txt';
+                let finalObject = fileHelper.mergeFiles(firstFileUrl, url);
+                res.json(finalObject)
+            }        
+        }
+
      
     }     
 
