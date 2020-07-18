@@ -1,0 +1,31 @@
+[
+    {
+        "adId": "MLB704046597",
+        "store": "FORTSMAQ",
+        "state": " São Paulo"
+    }
+],[
+    {
+        "adId": "MLB836346143",
+        "store": "CADDYAUTOPECAS",
+        "state": " São Paulo"
+    }
+],[
+    {
+        "adId": "MLB1186038083",
+        "store": "BELEZA_DE_MULHER",
+        "state": " São Paulo"
+    }
+],[
+    {
+        "adId": "MLB700013564",
+        "store": "BELOSPÉS",
+        "state": " São Paulo"
+    }
+],[
+    {
+        "adId": "MLB1217859159",
+        "store": "HDCA2018",
+        "state": " Goiás"
+    }
+],
